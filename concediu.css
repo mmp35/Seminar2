@@ -27,6 +27,9 @@ a:active  {
     background-color:transparent; 
     text-decoration:underline;
 }
+th {
+    padding: 3px 10px;
+}
 h1 {
     color: #FF751A;
     text-align: center;
@@ -56,6 +59,4 @@ img.concediu {
     margin-right: 15px;
     box-shadow: 5px 5px 5px #999999; 
 }
-#meniu {
-    padding: 5px 15px 5px 15px;
-}
+
