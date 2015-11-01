@@ -17,9 +17,10 @@ a:visited {
     text-decoration:none;
 }
 a:hover   {
-    color:aquamarine; 
-    background-color:transparent; 
+    color:#663300; 
+    background-color:transparent;     
     text-decoration:underline;
+    
 }
 a:active  {
     color:white; 
