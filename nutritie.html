@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<title>Webdesign
+	</title>
+	<link rel="stylesheet" type="text/css" href="nutritie.css" />
+</head>
+
+<body onload="vbrowser()" bgcolor="#FFFFFF" link="#0000CC" vlink="#47008F" alink="#FFFFFF">
+<div id="fundal"> 
+	<table>
+		<tr>
+			<td width="150" valign="top">
+				<table border='1'>
+					<tr>
+						<th><a href="index.html">Acasa</a></th>
+					</tr>
+					<tr>
+						<th><a href="concediu.html">Concediu</a></th>
+					</tr>
+					<tr>
+						<th><a href="flori.html">Flori</a></th>
+					</tr>
+					<tr>
+						<th><a href="galeriefoto.html">Galerie foto</a></th>
+					</tr>
+					<tr bgcolor="#000066">
+						<th><a href="nutritie.html"><font color="#FFFFFF">Nutritie</font></a></th>
+					</tr>
+					<tr>
+						<th><a href="miscare.html">Miscare</a></th>
+					</tr>
+					<tr>
+						<th><a href="contact.html">Contact</a></th>
+					</tr>
+			
+				</table>
+				<br/>
+				<p id="versiune"></p>
+				<script type="text/javascript">
+					function vbrowser(){
+						document.getElementById("versiune").innerHTML="Browserul utilizat de dvs este: <br/>" + navigator.userAgent;
+					}
+				</script>
+			</td>
+	<td  valign="top">
+		<div id="fundalimagini">
+				<center><h1><i>O viata sanatoasa</i></h1></center>
+			<table>
+				<tr>
+					<td colspan="3">
+						<center><h3 id="nutri" style="cursor: pointer;" onclick=bigtext()><i>Nutritie</i></h3></center>
+					<script type"text/javascript">
+					   	function bigtext(){
+						var nutritext = document.getElementById("nutri");
+					        if (nutritext.style.fontSize == "xx-large"){
+					        nutritext.style.fontSize = "large";
+					        } else {
+					        nutritext.style.fontSize = "xx-large";
+							 }
+								  }
+					  </script>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 250px; vertical-align: top;">
+							<center><b>Carbohidratii</b></center><br>
+							<p>
+							Carbohidratii consumati sunt descompusi in glucoza, un zahar  simplu transportat prin tot corpul.
+							1 gram de carbohidrati contine aproximativ 4 calorii.
+							Tipuri de carbohidrati: 
+							Carbohidrati simpli - glucoza , sucroza , fructoza, galactoza si maltoza .
+							Carbohidrati complecsi - paine si paste integrale, orez brun, legume si tuberculi, fibre. 	
+							</p>
+					</td>
+						<td style="width: 250px; vertical-align: top;">
+							<center><b>Proteinele</b></center><br>
+							<p>
+							Este principalul material pentru constructia musculara. Aminoacizii sunt materiale cheie pentru producerea celulelor si a hormonilor. 
+							1 gram de proteina contine aproximativ 4 calorii.
+							Surse de proteine: Piept de pui sau de curcan fara piele, carne slaba de vita, albusuri de ou, peste, lactate fara grasimi, concentrate proteice.
+	
+							</p>
+					</td>
+								<td style="width: 250px; vertical-align: top;">
+							<b><center>Lipidele</b></center><br>
+							<p>
+							Servesc functii importante in organism: depozit mare si concentrat de energie, protejeaza organismul, transportor pentru vitaminele 
+							liposolubile (A, D, E K), principal distribuitor de acizi grasi esentiali.
+							1 gram de grasimi contine aproximativ 9 calorii. 
+							Principale surse: carne, oua, produse lactate integrale si uleiuri (nuci, alune, seminte floarea soarelui), masline.
+							</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+					<center><h3 id="cimc"><i>Calculator indice masa corporala</i></h3></center>
+					<script type="text/javascript">
+					document.getElementById("cimc").onmouseover = function() {textrosu()};
+					document.getElementById("cimc").onmouseout = function() {textnegru()};
+					
+					function textrosu() {
+					    document.getElementById("cimc").style.color = "red";
+					}
+					
+					function textnegru() {
+					    document.getElementById("cimc").style.color = "black";
+					}
+					</script>
+					<p>Indicele de masa corporala este un indicator de calculare a greutatii corporale ideale, in functie de greutatea si inaltimea persoanei. IMC ajuta la stabilirea categoriei de greutate in care se incadreaza o persoana.
+					</p>
+					</td>
+				</tr>
+				</table>
+				<table>
+				<tr>
+					<td>
+						<form>
+							<input type="Text" id="greutate" size="6"> Greutate (in kilograme) 
+							<br><br>
+							<input type="Text" id="inaltime" size="6"> Inaltime (in centimetri)
+							<br><br>
+							<input type="Text" id="IMC" size="6">
+							<input type="button" value="Calculeaza IMC" onclick="calculeazaIMC()" name="button">
+							<input type="reset" value="Sterge">
+						</form>
+					<script type="text/javascript">
+
+						function  calculeazaIMC() {
+						  var greutate = document.getElementById('greutate').value
+						  var inaltime = document.getElementById('inaltime').value
+						  if (greutate == "") {
+							alert("Va rog introduceti greutatea.");
+							return;
+						  }
+						  if (inaltime == ""){ 
+							alert("Va rog introduceti inaltimea.");
+							return;
+						  }
+						 
+						  var IMC = (greutate  / (inaltime * inaltime)) * 10000;
+						  document.getElementById('IMC').value=IMC.toFixed(2);
+						}
+					</script>
+					</td>
+					<td>
+						<p style="margin-left: 60px;">
+							<b>Interpretare rezultat</b><br>
+							Subponderal: <= 18,49<br>
+							Greutate normala: 18,50 - 24,99<br>
+							Supraponderal: 25,00 - 29,99<br>
+							Obezitate (gradul I): 30,00 - 34,99<br>
+							Obezitate (gradul II): 35,00 - 39,99<br>
+							Obezitate morbida: >= 40,00<br>
+						</p>
+					</td>
+				</tr>
+				</table>
+			</table>
+			
+			
+			</div>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+
+</html>

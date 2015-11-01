@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<title>Webdesign
+	</title>
+	<link rel="stylesheet" type="text/css" href="contact.css" />
+</head>
+
+<body>
+<div id="fundal">	
+	<table style="padding: 15px;">
+		<tr>
+			<td width="200" valign="top">
+				<table bgcolor="#FFFFE0" border='1'>
+					<tr>
+						<th><a href="index.html">Acasa</a></th>
+					</tr>
+					<tr>
+						<th><a href="concediu.html">Concediu</a></th>
+					</tr>
+					<tr>
+						<th><a href="flori.html">Flori</a></th>
+					</tr>
+					<tr>
+						<th><a href="galeriefoto.html">Galerie foto</a></th>
+					</tr>
+					<tr>
+						<th><a href="nutritie.html">Nutritie</a></th>
+					</tr>
+					<tr>
+					<th><a href="miscare.html">Miscare</a></th>
+					</tr>
+					<tr bgcolor="#000066">
+						<th><a href="contact.html"><font color="#FFFFFF">Contact</font></a></th>
+					</tr>
+				
+				</table>
+			</td>
+			<td halign="left">
+				
+				<h1>Contact</h1>
+				<p><b>Date de contact:</b></p>
+				<table>
+					<tr>
+						<td style="vertical-align: top; width: 80px;">Adresa:</td>	 
+						<td>
+						 Strada Aleea Nr 1001 <br />
+				         	 Bucuresti sector 8 <br />
+				                 506070 Romania 
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top; width: 80px;">Telefon:</td>
+						<td> 0040 100 200 300</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top; width: 80px;">E-mail:</td>
+						<td><a href="mailto:magda.pall@yahoo.com">contact@contact.com</a></td>
+					</tr>
+				</table>
+					<center><p><b>Formular de contact</b></p></center>
+					
+		              	<form action="mailto:magda.pall@yahoo.com?subject=Buna ziua" enctype="text/plain" method="post" id="formular" onsubmit="return verificaForm();">
+		              		<div class="campuri">
+		                		<label>Nume: </label><input id="Name" type="text" name="Name" />
+		                	</div>
+		                	<div class="campuri">
+		                		<label>Adresa de e-mail: </label><input id="Email" type="text" name="E-mail" />
+		                	</div>
+		                	<div class="campuri">
+		        	 		<label>Numar de telefon: </label><input id="Telefon" type="text" name="Telefon" />
+		                	</div>
+		                	<div class="campuri">
+		                		<label style="vertical-align: top;">Mesaj:</label><textarea id="Comment" name="Comment"></textarea>
+		                	</div>
+		                	<div class="butoane">
+		                		<input id="bsubmit" type="submit" name="Submit" value="Trimite" />
+		                		<input id="breset" type="reset" name="Reset" value="Sterge" />
+		                	</div>
+		                </form>
+						<script type="text/javascript">
+							function verificaForm(){
+								if (document.getElementById('Name').value == ''){
+									alert('Numele nu poate fi gol!');
+									return false;
+								}
+								if (document.getElementById('Email').value == ''){
+									alert('Email nu poate fi gol!');
+									return false;
+								}
+								if (document.getElementById('Telefon').value == ''){
+									alert('Telefon nu poate fi gol!');
+									return false;
+								}
+								if (document.getElementById('Comment').value == ''){
+									alert('Mesajul nu poate fi gol!');
+									return false;
+								}
+								return true;
+							}
+						</script>
+			</td>	
+		</tr>
+	</table>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+

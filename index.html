@@ -5,33 +5,58 @@
 <head>
 	<title>Webdesign
 	</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body bgcolor="#FFFFFF" link="#0000CC" vlink="#47008F" alink="#FFFFFF">
+<div id="fundal"> 
 	<table>
 		<tr>
-			<td width="300" valign="top">
-				<table bgcolor="#F0F5F5" border='1'>
+			<td width="200" valign="top">
+				<table border='1'>
 					<tr bgcolor="#000066">
 						<th><a href="index.html"><font color="#FFFFFF">Acasa</font></a></th>
 					</tr>
 					<tr>
-						<th><a href="cv.html">Curriculum Vitae</a></th>
+						<th><a href="concediu.html">Concediu</a></th>
 					</tr>
 					<tr>
-						<th><a href="mozaic.html">Mozaic</a></th>
+						<th><a href="flori.html">Flori</a></th>
 					</tr>
 					<tr>
-						<th><a href="poveste.html">Poveste</a></th>
+						<th><a href="galeriefoto.html">Galerie foto</a></th>
+					</tr>
+					<tr>
+						<th><a href="nutritie.html">Nutritie</a></th>
+					</tr>
+					<tr>
+						<th><a href="miscare.html">Miscare</a></th>
+					</tr>
+					<tr>
+						<th><a href="contact.html">Contact</a></th>
 					</tr>
 				</table>
 			</td>
 			<td>
 				<center><h1><i>Curs Webdesign - Seminarii</i></h1></center>
-				<center><img src="homework.png" alt="Tema de casa"></center>
+				<img id="imagine" src="homework.png" alt="Tema de casa">
+				<br />
+				<button id="butondata" onclick="butontext()">Data si ora</button>
+				<script type="text/javascript">
+				var butontext = function () {
+					if (document.getElementById("butondata").innerHTML=="Data si ora") 
+						{
+					document.getElementById("butondata").innerHTML=Date();
+						}
+					else    {
+					document.getElementById("butondata").innerHTML="Data si ora";	
+						}
+							    }
+				</script>
 			</td>
 		</tr>
 	</table>
+</div>
 </body>
 
 </html>

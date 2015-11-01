@@ -1,0 +1,144 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<title>Webdesign
+	</title>
+	<link rel="stylesheet" type="text/css" href="concediu.css" />
+</head>
+
+<body>
+<div id="fundal">	
+	<table style="padding: 15px;">
+		<tr>
+			<td width="200" valign="top">
+				<table bgcolor="#F0F5F5" border='1'>
+					<tr>
+						<th><a href="index.html">Acasa</a></th>
+					</tr>
+					<tr bgcolor="#000066">
+						<th><a href="concediu.html"><font color="#FFFFFF">Concediu</font></a></th>
+					</tr>
+					<tr>
+						<th><a href="flori.html">Flori</a></th>
+					</tr>
+					<tr>
+						<th><a href="galeriefoto.html">Galerie foto</a></th>
+					</tr>
+					<tr>
+						<th><a href="nutritie.html">Nutritie</a></th>
+					</tr>
+					<tr>
+					<th><a href="miscare.html">Miscare</a></th>
+					</tr>
+					<tr>
+						<th><a href="contact.html">Contact</a></th>
+					</tr>
+				
+				</table>
+			</td>
+			
+	
+			<td>
+				<table>
+					<tr>
+						<td>			
+							<h1>Concediu in Bavaria</h1>
+							<p>
+								Bavaria este fara indoiala cea mai frumoasa zona a Germaniei si din acest motiv este si cea mai vizitata zona 
+								turistica a tarii. Zona este plina de atractii la tot pasul, de la metropole frumoase cum este orasul Munich,
+								la castele impresionante, lacuri cristaline cu apa de munte, munti impunatori, paduri verzi, aer curat, 
+								peisaje care iti taie rasuflarea. 
+							</p>
+						</td>
+					</tr>
+					<tr height="250">
+						<td>
+							<h3>Munchen</h3>
+							<br/>
+								<img id="imageMunich" class="concediu" src="munich.jpg" alt="Munchen" onclick="changeImageMunich()">
+							<script type="text/javascript">
+								function changeImageMunich() {
+
+									if (document.getElementById("imageMunich").src.indexOf("munich.jpg") > 0) 
+									{
+										document.getElementById("imageMunich").src = "munich2.jpg";
+									}
+									else 
+									{
+										document.getElementById("imageMunich").src = "munich.jpg";
+									}
+								}
+							</script>
+							<p>
+								Munchen este capitala regiunii Bavaria si relativ aproape situat de maiestosii munti Alpi. Este un oras primitor,
+								cu viata intensa, plin de atractii de la muzee faimoase, biserici, teatre, arhitectura la aleile cu magazine 
+								care iti fura ochii.
+							</p>
+								<a href="http://www.tripadvisor.com/Attractions-g187309-Activities-Munich_Upper_Bavaria_Bavaria.html" target="_blank">Top atractii de vizitat in Munchen</a>
+						</td>
+					</tr>
+					<tr height="250">
+						<td>
+							<h3>Alpii Bavarezi</h3>
+							<br/>
+								<img id="imageAlpi" class="concediu" src="garmisch.jpg" alt="Garmisch-Partenkirchen" onclick="changeImageAlpi()">
+								<script type="text/javascript">
+									function changeImageAlpi() {
+
+										if (document.getElementById("imageAlpi").src.indexOf("garmisch.jpg") > 0) 
+										{
+											document.getElementById("imageAlpi").src = "garmisch2.jpg";
+										}
+										else 
+										{
+											document.getElementById("imageAlpi").src = "garmisch.jpg";
+										}
+									}
+								</script>
+							<p>
+								Un loc deosebit care merita vizitat macar o data in viata. Un loc care iti taie rasuflarea. 
+								Din localitatea Garmisch-Partenkirchen se pot efectua drumetii cel mai inalt varf Zugspitze. Peisaje foarte frumoase
+								se regasesc si de la varfurile Alpspitze si Wank.
+							</p>
+								<a href="http://www.tripadvisor.com/Hotels-g187302-Garmisch_Partenkirchen_Upper_Bavaria_Bavaria-Hotels.html" target="_blank">Top atractii in Garmisch Partenkirchen</a>
+						</td>
+					</tr>
+					<tr height="250">
+						<td>
+							<h3>Castelul Neuschwanstein</h3>
+							<br/>
+								<img id="imageCastle" class="concediu" src="castle.jpg" alt="Castelul Neuschwanstein"  onclick="changeImageCastle()">
+								<script type="text/javascript">
+									function changeImageCastle() {
+
+										if (document.getElementById("imageCastle").src.indexOf("castle.jpg") > 0) 
+										{
+											document.getElementById("imageCastle").src = "castle2.jpg";
+										}
+										else 
+										{
+											document.getElementById("imageCastle").src = "castle.jpg";
+										}
+									}
+								</script>
+							<p>
+								Castelul Neuschwanstein, binecunoscut si din animatiile Disney, castelul din poveste, a fost construit
+								la cerinta regelui Ludwig al II-lea. Castelul a constituit refugiul personal al regelui. Dupa moartea sa, castelul
+								a fost deschis publicului, milioane de vizitatori pasindu-i pragul in fiecare an.
+							</p>
+								<a href="http://www.tripadvisor.com/Attraction_Review-g187307-d190837-Reviews-Neuschwanstein_Castle-Hohenschwangau_Swabia_Bavaria.html" target="_blank">Castelul Neuschwanstein</a>
+						</td>
+					</tr>
+				</table>
+			</td>	
+		</tr>
+	</table>
+</div>
+
+
+</body>
+
+</html>
