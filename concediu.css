@@ -1,8 +1,9 @@
 #fundal {
     width: 1000px;
     padding: 20px;
+    border: none;
     margin: 0 auto;
-    background-color: #F0F5F5;
+    background-color: #FFEB99;
     box-shadow: 5px 5px 5px #999999;
 }
 a:link    {
@@ -26,12 +27,13 @@ a:active  {
     text-decoration:underline;
 }
 h1 {
-    color: #003399;
+    color: #FF9900;
     text-align: center;
     margin-top:0;
+    text-shadow: 1px 1px 1px #333333;
 }
 h3 {
-    color: #003399;
+    color: #FF9900;
     text-align: left;
     text-decoration: underline;
 }
