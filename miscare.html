@@ -42,96 +42,95 @@
 				</table>
 			</td>
 			<td  valign="top">
-		<div>
-			
-				<center><h1><i>Exercitii fizice</i></h1></center>
-			<table>
-				<tr>
-					<td style="width: 270px; vertical-align: top;">
-						<center><b>Exercitiile aerobe</b></center><br>
-						<img id="cardio" class="poze" src="cardio.jpg" alt="Exercitii aerobe" style="cursor: pointer;" onclick=schimbaimagine(this)>
-							<p>
-							Efortul aerob este acel efort care se desfasoara folosind oxigen din afara organismului. Antrenamentul este de durata lunga, iar oboseala de dupa nu este una profunda. 
-							Prin exercitiile aerobice se oxigeneaza celulelor din zonele periferice si imbunatateste sistemul cardiovascular.
-							Tipuri de efort aerob: aerobic, spinning, alergatul pe banda, orice sport care mareste si mentine pulsul cardiac peste o anumita valoare.	
-							</p>
-					</td>
-					<td style="width: 270px; vertical-align: top;">
-						<center><b>Exercitiile anaerobe</b></center><br>
-						<img id="anaerobex" class="poze" src="anaerobex.jpg" alt="exercitii anaerobe" style="cursor: pointer;" onclick=schimbaimagine(this)>
-							<p>
-							Exercitiul de tip anaerob nu foloseste oxigenul drept combustibil, ci glucoza prezenta sub forma de depzite de glicogen in muschi 
-							si ficat. Antrenamentul anaerob implica in general ridicarea de greutati, testarea rezistentei si intervale de intensitate ridicata. 
-							Aceste exercitii sunt destinate sa creasca masa musculara, prin alungirea si scurtarea fibrelor. Antrenamentul este de durata scurta, 
-							iar oboseala de dupa este una intensa.
-							</p>
-					</td>
-					<td style="width: 270px; vertical-align: top;">
-						<center><b>Stretching</b></center><br>
-						<img id="stretching" class="poze" src="stretching.jpg" alt="stretching" style="cursor: pointer;" onclick=schimbaimagine(this)>
-							<p>
-							Stretchingul se realizeaza dupa incalzirea intregii musculaturi. Acesta creste tonusul muscular, alungeste si intareste fibrele musculare si tendoanele. Imbunatatirea flexibilitatii si mobilitatii fac miscarea mai libera,
-							previne durerea secundara unor afectiuni reumatismale degenerative. Stretchingul este recomandat pentru persoanele predispuse 
-							sa dezvolte rupturi musculare, intinderi musculare sau tendinite.
-							</p>
-					</td>
-						<script type"text/javascript">
-		    					var imagini = ["cardio.jpg", "anaerobex.jpg", "stretching.jpg"]
-		    					var imagineaCurenta = 0;
-							function schimbaimagine(poza){
-							 imagineaCurenta = imagineaCurenta + 1;
-		      					if (imagineaCurenta > 2) imagineaCurenta = 0;
-		      					poza.src = imagini[imagineaCurenta];
-						 }
-		  				</script>
-						
-				</tr>
-				<tr>
-					<td colspan="3">
-					<center><h3 id="crmb"><i>Calculator Rata Metabolica Bazala</i></h3></center>
-					<script type="text/javascript">
-						document.getElementById("crmb").onmouseover = function() {textrosu()};
-						document.getElementById("crmb").onmouseout = function() {textnegru()};
-						
-						function textrosu() {
-						document.getElementById("crmb").style.color = "red";
-						}
-						
-						function textnegru() {
-						document.getElementById("crmb").style.color = "black";
-						}
-					</script>
-					<p> Rata metabolica bazala este este rata minima de consum energetic necesar vietii. Este cantitea minima de energie exprimata in calorii de care corpul nostru are nevoie sa se mentina in viata, in conditii de repaus fizic. </p>
-					<!-- Formula: 66 + (13,7 x greutatea in kg) + (5 x inaltimea in cm) – (6,8 x varsta in ani)-->
-					</pre>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3">
-						<form>
-							<input type="Text" id="varsta" size="6"> Varsta (in ani) 
-							<br><br>	
-							<input type="Text" id="greutate" size="6"> Greutate (in kilograme) 
-							<br><br>
-							<input type="Text" id="inaltime" size="6"> Inaltime (in centimetri)
-							<br><br>
-							<input type="Text" id="IRMB" size="6">   
-							<input type="button" value="Calculeaza IRMB" onclick="calculeazaIRMB()" name="button">
-							<input type="reset" value="Sterge">
-						</form>
-					</td>
-					<script type="text/javascript" src="miscare.js">
-					</script>
-				</tr>
-			</table>
-			
-			
-		</div>
-			</td>
+					<div>
+					
+						<center><h1><i>Exercitii fizice</i></h1></center>
+					<table>
+						<tr>
+							<td style="width: 270px; vertical-align: top;">
+								<center><b>Exercitiile aerobe</b></center><br>
+								<img id="cardio" class="poze" src="cardio.jpg" alt="Exercitii aerobe" style="cursor: pointer;" onclick=schimbaimagine(this)>
+									<p>
+									Efortul aerob este acel efort care se desfasoara folosind oxigen din afara organismului. Antrenamentul este de durata lunga, iar oboseala de dupa nu este una profunda. 
+									Prin exercitiile aerobice se oxigeneaza celulelor din zonele periferice si imbunatateste sistemul cardiovascular.
+									Tipuri de efort aerob: aerobic, spinning, alergatul pe banda, orice sport care mareste si mentine pulsul cardiac peste o anumita valoare.	
+									</p>
+							</td>
+							<td style="width: 270px; vertical-align: top;">
+								<center><b>Exercitiile anaerobe</b></center><br>
+								<img id="anaerobex" class="poze" src="anaerobex.jpg" alt="exercitii anaerobe" style="cursor: pointer;" onclick=schimbaimagine(this)>
+									<p>
+									Exercitiul de tip anaerob nu foloseste oxigenul drept combustibil, ci glucoza prezenta sub forma de depzite de glicogen in muschi 
+									si ficat. Antrenamentul anaerob implica in general ridicarea de greutati, testarea rezistentei si intervale de intensitate ridicata. 
+									Aceste exercitii sunt destinate sa creasca masa musculara, prin alungirea si scurtarea fibrelor. Antrenamentul este de durata scurta, 
+									iar oboseala de dupa este una intensa.
+									</p>
+							</td>
+							<td style="width: 270px; vertical-align: top;">
+								<center><b>Stretching</b></center><br>
+								<img id="stretching" class="poze" src="stretching.jpg" alt="stretching" style="cursor: pointer;" onclick=schimbaimagine(this)>
+									<p>
+									Stretchingul se realizeaza dupa incalzirea intregii musculaturi. Acesta creste tonusul muscular, alungeste si intareste fibrele musculare si tendoanele. Imbunatatirea flexibilitatii si mobilitatii fac miscarea mai libera,
+									previne durerea secundara unor afectiuni reumatismale degenerative. Stretchingul este recomandat pentru persoanele predispuse 
+									sa dezvolte rupturi musculare, intinderi musculare sau tendinite.
+									</p>
+							</td>
+								<script type"text/javascript">
+										var imagini = ["cardio.jpg", "anaerobex.jpg", "stretching.jpg"]
+										var imagineaCurenta = 0;
+									function schimbaimagine(poza){
+									 imagineaCurenta = imagineaCurenta + 1;
+										if (imagineaCurenta > 2) imagineaCurenta = 0;
+										poza.src = imagini[imagineaCurenta];
+								 }
+								</script>
+								
+						</tr>
+						<tr>
+							<td colspan="3">
+							<center><h3 id="crmb"><i>Calculator Rata Metabolica Bazala</i></h3></center>
+							<script type="text/javascript">
+								document.getElementById("crmb").onmouseover = function() {textrosu()};
+								document.getElementById("crmb").onmouseout = function() {textnegru()};
+								
+								function textrosu() {
+								document.getElementById("crmb").style.color = "red";
+								}
+								
+								function textnegru() {
+								document.getElementById("crmb").style.color = "black";
+								}
+							</script>
+							<p> Rata metabolica bazala este este rata minima de consum energetic necesar vietii. Este cantitea minima de energie exprimata in calorii de care corpul nostru are nevoie sa se mentina in viata, in conditii de repaus fizic. </p>
+							<!-- Formula: 66 + (13,7 x greutatea in kg) + (5 x inaltimea in cm) – (6,8 x varsta in ani)-->
+							</pre>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<form>
+									<input type="Text" id="varsta" size="6"> Varsta (in ani) 
+									<br><br>	
+									<input type="Text" id="greutate" size="6"> Greutate (in kilograme) 
+									<br><br>
+									<input type="Text" id="inaltime" size="6"> Inaltime (in centimetri)
+									<br><br>
+									<input type="Text" id="IRMB" size="6">   
+									<input type="button" value="Calculeaza IRMB" onclick="calculeazaIRMB()" name="button">
+									<input type="reset" value="Sterge">
+								</form>
+							</td>
+							<script type="text/javascript" src="miscare.js">
+							</script>
+						</tr>
+					</table>	
+					</div>			
+					<br>
+					<br>
+					<center><p>&copy; pallm 2015</p></center>
+				</td>
 		</tr>
 	</table>
-	<br>
-	<center><p>&copy; pallm 2015</p></center>
 	
 </div>
 </body>
