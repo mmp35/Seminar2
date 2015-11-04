@@ -54,8 +54,8 @@
 			<table>
 				<tr>
 					<td colspan="3">
-						<center><h3 id="nutri" style="cursor: pointer;" onclick=bigtext()><i>Nutritie</i></h3></center>
-					<script type"text/javascript">
+						<h3 id="nutri" style="cursor: pointer; text-align: center;" onclick=bigtext()><i>Nutritie</i></h3>
+					<script type="text/javascript">
 					   	function bigtext(){
 						var nutritext = document.getElementById("nutri");
 					        if (nutritext.style.fontSize == "xx-large"){
@@ -69,7 +69,7 @@
 				</tr>
 				<tr>
 					<td style="width: 250px; vertical-align: top;">
-							<center><b>Carbohidratii</b></center><br>
+							<p style="text-align: center; font-weight: bold;">Carbohidratii</p><br>
 							<p>
 							Carbohidratii consumati sunt descompusi in glucoza, un zahar  simplu transportat prin tot corpul.
 							1 gram de carbohidrati contine aproximativ 4 calorii.
@@ -79,7 +79,7 @@
 							</p>
 					</td>
 						<td style="width: 250px; vertical-align: top;">
-							<center><b>Proteinele</b></center><br>
+							<p style="text-align: center; font-weight: bold;">Proteinele</p><br>
 							<p>
 							Este principalul material pentru constructia musculara. Aminoacizii sunt materiale cheie pentru producerea celulelor si a hormonilor. 
 							1 gram de proteina contine aproximativ 4 calorii.
@@ -88,7 +88,7 @@
 							</p>
 					</td>
 								<td style="width: 250px; vertical-align: top;">
-							<b><center>Lipidele</b></center><br>
+							<p style="text-align: center; font-weight: bold;">Lipidele</p><br>
 							<p>
 							Servesc functii importante in organism: depozit mare si concentrat de energie, protejeaza organismul, transportor pentru vitaminele 
 							liposolubile (A, D, E K), principal distribuitor de acizi grasi esentiali.
@@ -99,7 +99,7 @@
 				</tr>
 				<tr>
 					<td colspan="3">
-					<center><h3 id="cimc"><i>Calculator indice masa corporala</i></h3></center>
+					<h3 id="cimc" style="text-align: center;"><i>Calculator indice masa corporala</i></h3>
 					<script type="text/javascript">
 					document.getElementById("cimc").onmouseover = function() {textrosu()};
 					document.getElementById("cimc").onmouseout = function() {textnegru()};
